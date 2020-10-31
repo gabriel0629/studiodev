@@ -1,0 +1,192 @@
+/*body{
+    background-color: red;  /* Define color de fondo de la pagian en al etiqueta body
+}*/
+
+* {box-sizing: border-box;}     /*para que los elemnetso de serviccios quede en una sola linea*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.home-wrapper {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/background.jpg) no-repeat center top;     /*imagen de fondo de la pagina*/
+    background-size: cover;
+    color: white; /* color del texto*/
+}
+
+header {
+    position: fixed;
+    padding: 10px 0;   /* para despegar el header del borde del navegador*/
+    width: 100%;
+    background-color: rgba(48, 48, 48, 0.5);
+}
+
+header img {
+   width: 200px; 
+}
+
+header nav {
+    float: right;           /*mover a la derecha*/
+    margin-top: 10px;       /* para que quede esapcio arriba*/
+}
+
+header nav a {
+    color: white;
+    font-weight: bold;      /* peso de la fuente*/
+    text-decoration: none;
+    margin-left: 10px;      /*para espacio entre los herder de navegación*/
+    padding: 10px 15px;
+}
+
+header nav a.active {
+    background: #fed136;        /*para verse amarillo como activo*/
+    border-radius: 3px;           /* para darle border redondos al active amarillo*/
+}
+
+#home {
+    text-align: center;            /*centrar el texto*/
+    padding: 200px 0 150px;         /* dar mas espacio entra la seccion home y al seccionde servicios*/    
+}
+
+#home h1 {
+    font-size: 68px;        /*tamaño de la letra tirtulo h1*/
+    font-weight: normal;    /* peso de la fuente*/
+    line-height: 1.2;       /*para que no le afecte line-height: 1.6; del body*/
+    margin-bottom: 40px;
+}
+
+#home .divide {                     /*define la line amarilla pequeña*/
+    width: 80px;
+    border-top: 5px solid #fed136;
+    margin: 0 auto;
+
+}
+
+#home p {
+    font-size: 24px;        /*define tamaño de letra para los parrafos p */
+    margin-top: 40px;
+}
+
+#home .social {
+    margin-top: 80px;       /* define el margin de los iconos de redes sociales para despegarlos de los parrafos*/
+}
+
+#home .social a {
+    color: white;                 /*define color de los iconos de redes sociales*/
+    display: inline-block;
+    border-radius: 50%;             /*darle forma redonnda a los iconos*/
+    background-color: black;      /* define color de los iconos*/
+    font-size: 24px;                /*define tamaño de los iconos*/
+    font-weight: bold;
+    height: 50px;                   /* define el alto de circulos de los iconos para este caso particular*/
+    width: 50px;                    /* define el ancho de circulos de los iconos para este caso particular*/
+    line-height: 50px;              /*define el alto de la linea para que lso iconos queden mas centrados dentro del criculo*/
+    margin-right: 10px;
+    -webkit-transition: all .3s;    /*define la animacion del color en el icono*/
+    -moz-transition: all .3s;       /*define la animacion del color en el icono*/
+    transition: all .3s;            /*define la animacion del color en el icono*/
+}
+
+#home .social a:hover {                /*a:hover seudoclase*/
+    background-color: #fed136;      /*define el color amarillo para el icono cuando se pase el maouse por el*/
+}
+
+#servicios .box {
+    display: inline-block;           /*define la cajas de servicos*/
+    text-align: center;              /*define la cajas de servicos*/
+    width: 31%;                      /*define la cajas de servicos*/    
+    padding: 10px;                   /*define la cajas de servicos*/
+}
+
+#video {
+    background-color: black;        /*para enbeber el video dentro de la pagina*/
+    text-align: center;
+    padding: 30px 0;
+    
+}
+
+#portafolio {
+    background-color: whitesmoke;       /*define un color blanco grisaseo para el fonde de portafolio*/
+}
+
+#portafolio .box {
+    display: inline-block;
+    text-align: center;
+    width: 31%;
+    margin: 1%;
+    background-color: white;
+}
+
+#portafolio .box img {
+    width: 100%;
+
+}
+
+#portafolio .box p {
+    color: #666;        /*darle un color mas claro al parrafo del portafolio*/
+    padding: 10px;
+}
+
+#contacto {
+    background-color: #303030;
+    background-image: url(../images/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+#contacto h2 {
+    color: white;
+}
+
+#contacto input {                           /*define la caja y forma del input*/
+    padding: 20px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#contacto textarea {                        /*caracteriticas del area de texto del mensaje*/
+    margin: 20px 0;
+    padding: 20px;
+    width: 400px;
+}
+
+#contacto button {                          /*caracteriticas del boton enviar*/
+    background-color: #fed136;
+    padding: 20px 40px;
+    border-color: #fed136;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    line-height: 1px;
+    font-weight: bold;
+}
+
+footer {
+    padding: 90px 0;                        /*caracteriticas del footer*/
+    text-align: center;
+    font-size: 18px;
+}
+
+
+section {
+    padding: 80px 0;                        /*dar espacios arriba y abajo*/
+}
+
+section h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+.container {
+    width: 992px;                   /*para centra mas el menu el logo y el texto del header*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
